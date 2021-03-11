@@ -50,20 +50,12 @@
 			<div class="container">
 				<div class="bg-header"></div>
 				<article class="card"> 
-        <!--
-            -img
-            -separador
-            -texto
-            -Links (Linkedin - Codepen)
-        -->
+
            <img class="avatar" src="https://avatars.githubusercontent.com/u/25688030?s=460&u=4b0dedfce74d77cbeebb7f35559cb16fb29f2931&v=4" />
           <h1>Bruno Damiati</h1>
           <div class="separator"></div>
 			  </article>
-        <!--    
-          rodapé:      
-           - icones tecnologias
-        -->
+
 			</div>
 		</div>
 	</foreignObject>
