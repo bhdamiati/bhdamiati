@@ -1,8 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 800 800" width="800" height="800">
 	<foreignObject width="100%" height="100%">
 		<div xmlns="http://www.w3.org/1999/xhtml">
-		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="https://fonts.googleapis.com/css2?family=Stick&display=swap" rel="stylesheet">
 			<style>
 				.container {
 				  position: relative;
@@ -126,7 +124,7 @@
         }
         
         .name-title {
-          font-family: 'Stick', sans-serif;
+         
           color: #333;
           font-size: 35px;
           
