@@ -35,7 +35,6 @@
 				  background-color: rgba(255,255,255, 0.2);
 				  background-clip: padding-box;
 				  border: solid 2px transparent;
-				  backdrop-filter: blur(40px);
 				  box-shadow: 10px 10px 10px rgba(46,54,68,0.04);
           align-items: center;
           animation: show-card 1s 2s forwards ,move-card 1.5s 3s forwards;
@@ -204,9 +203,6 @@
             }
           }
           @keyframes move-card {
-            from {
-		backdrop-filter: blur(0px);
-	    }
 	    to {
               backdrop-filter: blur(40px);
               top: 50px;
