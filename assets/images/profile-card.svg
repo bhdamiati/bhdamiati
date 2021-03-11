@@ -48,6 +48,8 @@
             inset 10px 1px 0 #ffcc24, 
             0px 0px 0px 0px rgba(255, 255, 255, 0.5%), 
             0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+          opacity: 0;
+          animation: show-items 1s 3s forwards;
         }
         .face .eyes {
             position: relative;
@@ -131,7 +133,9 @@
           color: transparent;
           font-size: 40px;
           margin:15px 0 0 0;
-          text-shadow: -1px -1px rgba(255,255,255,0.5), 1px 1px rgba(0,0,0,0.2);
+          text-shadow: -1px -1px rgba(255,255,255,0.35), 1px 1px rgba(0,0,0,0.5);
+          opacity: 0;
+          animation: show-items 1s 3.4s forwards;
           
         }
         .separator {
@@ -142,12 +146,16 @@
           box-shadow: 
             -3px -3px 5px 0 rgba(255, 255, 255, 0.5), 
             3px 3px 5px 0 rgba(0, 0, 0, 0.1);
+          opacity: 0;
+          animation: show-items 1s 3.8s forwards;
         }
         .description {
           padding: 0 20px;
           font-size: 20px;
           color: #444;
           line-height: 1.2;
+          opacity: 0;
+          animation: show-items 1s 4.2s forwards;
         }
         @keyframes eye-blink {
             0% {
@@ -197,6 +205,16 @@
             100% {
               backdrop-filter: blur(40px);
               top: 50px;
+            }
+          }
+          @keyframes show-items {
+            from {
+              transform: translateY(-50px);
+              opacity: 0;
+            }
+            to {
+              transform: translateX(0px);
+              opacity: 1;
             }
           }
         }
