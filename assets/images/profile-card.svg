@@ -203,10 +203,7 @@
             }
           }
           @keyframes move-card {
-            0% {
-              backdrop-filter: blur(0px);
-            }
-            100% {
+            to {
               backdrop-filter: blur(40px);
               top: 50px;
             }
