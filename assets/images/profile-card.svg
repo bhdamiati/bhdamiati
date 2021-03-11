@@ -31,7 +31,7 @@
 				  box-shadow: 10px 10px 10px rgba(46,54,68,0.03);
           align-items: center;
 				}
-        .avatar {
+        .test-image {
           width: 200px;
           border-radius: 50%;
           border: 10px solid rgba(255,255,255, 0.5);
@@ -51,7 +51,7 @@
 				<div class="bg-header"></div>
 				<article class="card"> 
 
-          
+          <img class="test-image" src="https://avatars.githubusercontent.com/u/25688030?s=460&u=4b0dedfce74d77cbeebb7f35559cb16fb29f2931&v=4" />
           <h1>Bruno Damiati</h1>
           <div class="separator"></div>
 			  </article>
