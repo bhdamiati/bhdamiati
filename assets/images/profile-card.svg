@@ -31,11 +31,122 @@
 				  box-shadow: 10px 10px 10px rgba(46,54,68,0.03);
           align-items: center;
 				}
-        .avatar {
-          width: 200px;
-          border-radius: 50%;
-          border: 10px solid rgba(255,255,255, 0.5);
-          box-shadow: 0px 0px 0px 0px rgb(255 255 255 / 50%), 0px 0px 10px 0px rgba(0, 0, 0,0.5);
+        .face {
+          width: 140px;
+          height: 140px;
+          border-radius: 100%;
+          background: #ffdb10;
+          left: 35%;
+          top: 11%;
+          border: 5px solid rgba(255,255,255, 0.5);
+          box-shadow: 
+            inset 10px 1px 0 #ffcc24, 
+            0px 0px 0px 0px rgba(255, 255, 255, 0.5%), 
+            0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+        }
+
+        .face .eyes {
+            position: relative;
+            width: 15px;
+            height: 15px;
+            background: #000;
+            border-radius: 100%;
+            left: 35px;
+            top: 58px;
+            animation: eye-blink 2s infinite;
+        }
+        .face .eyes::after {
+            content: "";
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            background: #000;
+            border-radius: 100%;
+            left: 60px;
+        }
+        .face .smile {
+            position: relative;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+            width: 10px;
+            height: 6px;
+            background: transparent;
+            border: 5px solid #000;
+            left: 63px;
+            top: 55px;
+        }
+        .face .smile::before {
+            background: #ffdb10;
+            width: 30px;
+            height: 7px;
+            content: "";
+            position: absolute;
+            left: -10px;
+            top: -5.5px;
+        }
+        .face .cheeks {
+            position: relative;
+            width: 12px;
+            height: 12px;
+            border-radius: 100%;
+            background: #ff7e7e;
+            left: 25px;
+            top: 42px;
+        }
+        .face .cheeks::after {
+            content: "";
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            border-radius: 100%;
+            background: #ff7e7e;
+            left: 83px;
+        }
+        .face .shine {
+            position: relative;
+            width: 8px;
+            height: 20px;
+            border-radius: 200px;
+            background: #fff;
+            left: 110px;
+            top: -20px;
+            transform: rotate(-35deg);
+        }
+        .face .shine::before {
+            content: "";
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            background: #fff;
+            border-radius: 100%;
+            top: -12px;
+            right: 2px;
+        }
+        @keyframes eye-blink {
+            0% {
+                transform: scaleY(1);
+            }
+            18% {
+                transform: scaleY(1);
+            }
+            20% {
+                transform: scaleY(0);
+            }
+            25% {
+                transform: scaleY(1);
+            }
+            38% {
+                transform: scaleY(1);
+            }
+            40% {
+                transform: scaleY(0);
+            }
+            45% {
+                transform: scaleY(1);
+            }
+            80% {
+                transform: scaleY(1);
+            }
         }
         .separator {
           width: 100%;
@@ -50,12 +161,25 @@
 			<div class="container">
 				<div class="bg-header"></div>
 				<article class="card"> 
-
-          <img class="avatar" src="https://avatars.githubusercontent.com/u/25688030" />
+        <!--
+            -img
+            -separador
+            -texto
+            -Links (Linkedin - Codepen)
+        -->
+          <div class="face">
+            <div class="eyes"></div>
+            <div class="smile"></div>
+            <div class="cheeks"></div>
+            <div class="shine"></div>
+          </div>
           <h1>Bruno Damiati</h1>
           <div class="separator"></div>
 			  </article>
-
+        <!--    
+          rodapé:      
+           - icones tecnologias
+        -->
 			</div>
 		</div>
 	</foreignObject>
