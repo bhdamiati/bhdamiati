@@ -11,9 +11,6 @@
         .bg-header {
           width: 800px;
           height: 350px;
-          background-repeat: no-repeat;
-          background-size: 100% 100%;
-          background-image: url("https://raw.githubusercontent.com/bhdamiati/bhdamiati/2e86ea1e48ec10a492c17042f44b72c40b834849/assets/images/colorful-corridor.jpg");
         }
         .card {
           position: absolute;
@@ -33,7 +30,7 @@
         }
 			</style>
 			<div class="container">
-        <div class="bg-header"></div>
+        <img class="bg-header" src="https://raw.githubusercontent.com/bhdamiati/bhdamiati/2e86ea1e48ec10a492c17042f44b72c40b834849/assets/images/colorful-corridor.jpg" />
         <article class="card"> 
         
         </article>
