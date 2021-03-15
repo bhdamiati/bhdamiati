@@ -108,11 +108,11 @@
         .face .smile::before {
             background: #ffdb10;
             width: 30px;
-            height: 7px;
+            height: 10px;
             content: "";
             position: absolute;
             left: -10px;
-            top: -5.5px;
+            top: -8.5px;
         }
         .face .cheeks {
             position: relative;
