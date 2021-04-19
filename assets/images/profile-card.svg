@@ -19,9 +19,8 @@
 				  height: 200px;
           border-radius: 10px 10px 0 0;
 				  background-image: linear-gradient(45deg, #AC92EB, #4FC1E8, #A0D568, #FFCE54, #ED5564);
-          left: -450px;
-          opacity:0;
-          animation: show-background 1s 1s forwards;
+          background-size: 400%;
+          animation: bg-animation 20s infinite alternate;
 				}
 				.card {
 				  position: absolute;
@@ -181,6 +180,14 @@
           opacity: 0;
           animation: show-items 1s 4.2s forwards;
         }
+	@keyframes bg-animation {
+          from {
+            background-position: left;
+          }
+          to {
+            background-position: right;
+          }
+        }
         @keyframes eye-blink {
             0% {
                 transform: scaleY(1);
@@ -207,16 +214,6 @@
                 transform: scaleY(1);
             }
         }
-          @keyframes show-background {
-            0% {
-              left: -450px;
-              opacity:0;
-            }
-            100% {
-              left: 0;
-              opacity:1;
-            }
-          }
           @keyframes turn-card {
             0% {
               transform: rotateY(0deg) rotateX(0deg);
