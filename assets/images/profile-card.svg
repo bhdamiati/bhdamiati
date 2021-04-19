@@ -151,15 +151,18 @@
             top: -12px;
             right: 2px;
         }
-        
-        .name-title {
+       .name-title {
           color: transparent;
-          font-size: 40px;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          -webkit-background-clip: text;
+          background-image: linear-gradient(45deg, #AC92EB, #4FC1E8, #A0D568, #FFCE54, #ED5564);
+          background-size: 400%;
+          text-shadow: -1px -1px rgba(255,255,255,0.15), 1px 1px rgba(0,0,0,0.15);
+          font-size: 45px;
           margin:15px 0 0 0;
-          text-shadow: -1px -1px rgba(255,255,255,0.35), 1px 1px rgba(0,0,0,0.5);
           opacity: 0;
-          animation: show-items 1s 3.4s forwards;
-          
+          animation: show-items 1s 3.4s forwards, bg-animation 20s infinite alternate-reverse;;
         }
         .separator {
           width: 90%;
